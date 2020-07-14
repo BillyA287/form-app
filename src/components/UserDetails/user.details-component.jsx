@@ -1,7 +1,6 @@
 import React from 'react'
 import Dialog from "@material-ui/core/Dialog";
 import AppBar from "@material-ui/core/AppBar";
-import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
@@ -17,7 +16,7 @@ export class UserDetails extends React.Component {
     const { values, handleChange } = this.props;
 
     return (
-      <MuiThemeProvider>
+     
         <>
           <Dialog open fullWidth maxWidth="sm">
             <AppBar title="Enter User Details" />
@@ -53,7 +52,7 @@ export class UserDetails extends React.Component {
             </Button>
           </Dialog>
         </>
-      </MuiThemeProvider>
+     
     );
   }
 }

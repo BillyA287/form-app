@@ -1,7 +1,6 @@
 import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import AppBar from "@material-ui/core/AppBar";
-import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
 
 export class Success extends React.Component {
   continue = (event) => {
@@ -16,7 +15,7 @@ export class Success extends React.Component {
   };
   render() {
     return (
-      <MuiThemeProvider>
+     
         <>
           <Dialog open fullWidth maxWidth="sm">
             <AppBar title="Success" />
@@ -24,7 +23,7 @@ export class Success extends React.Component {
             <p>You will get an email with further instructions.</p>
           </Dialog>
         </>
-      </MuiThemeProvider>
+      
     );
   }
 }
