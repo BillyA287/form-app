@@ -5,7 +5,7 @@ import {Form} from './components/Form/form-component'
 
 function App() {
   return (
-    <MuiThemeProvider>
+    <MuiThemeProvider >
       <Form />
     </MuiThemeProvider>
     

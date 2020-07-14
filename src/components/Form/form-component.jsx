@@ -58,15 +58,13 @@ this.setState({[input]: event.target.value});
                         values={values}
                       />
                     );
-                case 4: 
-                return <Success />
+                case 4: return (<Success />)
+
+                default :
+              
       }
     
-      return (
-    
-    <div></div>
-        
-        );
+      
   }
 }
 
