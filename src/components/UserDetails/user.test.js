@@ -1,7 +1,4 @@
 
-// const React = require('react');
-// const UserDetails = require('./user.details-component')
-// const add = require("./user.details-component").add;
 
 import React from 'react'
 import UserDetails from './user.details-component'
@@ -10,7 +7,7 @@ import Button from "@material-ui/core/Button";
 
 
 it('expect to render UserDetails component', ()=> {
-    expect(shallow(<UserDetails values={{}} handleChange={jest.fn()} />).length).toEqual(1)
+    expect(shallow(<UserDetails values={{}} handleChange={jest.fn()} />)).toMatchSnapshot()
 })
 
 it('to check if handlechange function executes when button is clicked', ()=> {
