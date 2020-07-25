@@ -59,9 +59,6 @@ export class UserDetails extends React.Component {
 
 
 
-export const add = (x,y) => {
-return x + y
-}
 
 
 

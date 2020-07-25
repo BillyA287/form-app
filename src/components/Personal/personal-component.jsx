@@ -34,7 +34,7 @@ export class PersonalDetails extends React.Component {
           />
           <br />
           <TextField
-            id="input"
+            
             placeholder="Enter Your City"
             label="City"
             onChange={handleChange("city")}
@@ -44,7 +44,7 @@ export class PersonalDetails extends React.Component {
           />
           <br />
           <TextField
-            id="input"
+            
             placeholder="Enter Your Bio"
             label="Bio"
             onChange={handleChange("bio")}
