@@ -22,42 +22,64 @@ export class Confirm extends React.Component {
     } = this.props;
 
     return (
-     
-        <>
-          <Dialog open fullWidth maxWidth="sm">
-            <AppBar title="Confirm User Data" />
-            <List>
-              <ListItem>
-                <ListItemText primary="First Name" secondary={firstName} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Last Name" secondary={lastName} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Email" secondary={email} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Occupation" secondary={occupation} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="City" secondary={city} />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Bio" secondary={bio} />
-              </ListItem>
-            </List>
-            <br />
+      <>
+        <Dialog open fullWidth maxWidth="sm">
+          <AppBar title="Confirm User Data" />
+          <List>
+            <ListItem>
+              <ListItemText
+                data-test="firstName"
+                primary="First Name"
+                secondary={firstName}
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                data-test="lastName"
+                primary="Last Name"
+                secondary={lastName}
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                data-test="Email"
+                primary="Email"
+                secondary={email}
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                data-test="Occupation"
+                primary="Occupation"
+                secondary={occupation}
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                data-test="City"
+                primary="City"
+                secondary={city}
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemText
+                data-test="Bio"
+                primary="Bio"
+                secondary={bio}
+              />
+            </ListItem>
+          </List>
+          <br />
 
-            <Button color="secondary" variant="contained" onClick={this.back}>
-              Back
-            </Button>
+          <Button color="secondary" variant="contained" onClick={this.back}>
+            Back
+          </Button>
 
-            <Button color="primary" variant="contained" onClick={this.continue}>
-              Confirm & Continue
-            </Button>
-          </Dialog>
-        </>
-      
+          <Button color="primary" variant="contained" onClick={this.continue}>
+            Confirm & Continue
+          </Button>
+        </Dialog>
+      </>
     );
   }
 }
