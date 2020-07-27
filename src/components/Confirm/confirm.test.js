@@ -33,10 +33,4 @@ describe('Confirm Component', ()=> {
         })
     })
 
-    describe('no props passed in', ()=> {
-        let wrapper;
-        beforeEach(()=>{
-            wrapper = setUp()
-        })
-    })
 })
