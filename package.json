@@ -1,21 +1,28 @@
 {
+  "homepage": "http://BillyA287.github.io/form-app",
   "name": "form-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^5.0.0-alpha.2",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "@material-ui/core": "^5.0.0-alpha.14",
     "@material-ui/styles": "^4.10.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/user-event": "^7.1.2",
+    "add": "^2.0.6",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.0",
+    "react-scripts": "^4.0.0",
+    "react-spinners": "^0.9.0",
     "react-test-renderer": "^16.13.1"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,11 +46,11 @@
   "devDependencies": {
     "@testing-library/react": "^9.5.0",
     "babel-jest": "^26.1.0",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "gh-pages": "^3.1.0"
   },
   "moduleFileExtensions": [
     "js",
     "jsx"
   ]
-  
 }
